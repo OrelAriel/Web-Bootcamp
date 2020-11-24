@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Registration Form</title>
+</head>
+<body>
+    <h1>Race Registration!</h1>
+    <form action="registred">
+        
+        <!-- First and second name - Required -->
+        <div>
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" required>
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" required>
+        </div>
+        
+        <!-- Selection of a race - 5k is automatic checked -->
+        <div>
+            <label for="race_tpye">Select a Race</label>
+        </div>
+        <div>
+            <label for="5k">Fun Run 5k</label>
+            <input type="radio" id="5k" name="race_type" checked>
+        </div>
+        <div>
+            <label for="21k">Half Marathon</label>
+            <input type="radio" id="21k" name="race_type">
+        </div>
+        <div>
+            <label for="42k">Full Marathon</label>
+            <input type="radio" id="42k" name="race_type">
+        </div>
+        
+        <!-- Email and Passward - Required -->
+        <div>
+            <label for="email">Email</label>
+            <input type="Email" id="email" name="emial" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <!-- selection of a group age  -->
+        <div>
+            <label for="group_age">Select Age Group</label>
+            <select name="group_age" id="group_age" required>
+                <option value="">-- Please choose an option --</option>
+                <option value="kids">Under 18</option>
+                <option value="regular">19-35</option>
+                <option value="aged">Above 35</option>
+            </select>
+        </div>
+
+        <!-- Sumbot button -->
+        <div>
+            <input type="submit" value="Register!">
+        </div>
+
+    </form>
+</body>
+</html>
